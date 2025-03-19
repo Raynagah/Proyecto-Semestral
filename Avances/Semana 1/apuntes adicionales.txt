@@ -1,1 +1,10 @@
+--Semana 1--
+Creación del repositorio Proyecto Semestral.
+Adición de los colaboradores correspondientes.
+Creación de archivo README.md.
+Elección de módulos Microsoft Learn relacionados a GitHub.
+Elección de la licencia a utilizar durante el proyecto.
 
+
+
+--Semana 1--
