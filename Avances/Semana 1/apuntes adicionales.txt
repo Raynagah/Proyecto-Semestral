@@ -5,6 +5,6 @@ Creación de archivo README.md.
 Elección de módulos Microsoft Learn relacionados a GitHub.
 Elección de la licencia a utilizar durante el proyecto.
 
-
+AGREGAR INFORME COLABORATIVO
 
 --Semana 1--
