@@ -1,10 +1,14 @@
---Semana 1--
+--Inicio Semana 1--
+
 Creación del repositorio Proyecto Semestral.
 Adición de los colaboradores correspondientes.
 Creación de archivo README.md.
 Elección de módulos Microsoft Learn relacionados a GitHub.
 Elección de la licencia a utilizar durante el proyecto.
+AGREGAR INFORME COLABORATIVO***
 
-AGREGAR INFORME COLABORATIVO
+Pantallazos agregados
+Informe Agregado
+¡Semana 1 completada exitosamente!
 
---Semana 1--
+--Fin Semana 1--
