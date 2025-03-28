@@ -4,5 +4,5 @@
 2.-Creación de cuentas Figma y utilización de las mismas para el desarrollo de interfaces de usuario.
 
 3.-Creación del diseño sobre flujo básico del usuario dentro del sistema (Para este proyecto elegimos aplicación de escritorio).
-
+4.-Creación de las distintas UI's del sistema.
 -- Fin Semana 2 Miércoles 02-04-2025 --
