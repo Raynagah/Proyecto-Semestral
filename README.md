@@ -21,14 +21,14 @@ Informe Agregado
 
 --Fin Semana 1--
 
--- Inicio Semana 2 Miércoles 26-03-2025--
+-- Inicio Semana 2 --
 
 1.-Capacitación de los estudiantes sobre la plataforma Figma.
 2.-Creación de cuentas Figma y utilización de las mismas para el desarrollo de interfaces de usuario.
 
 3.-Creación del diseño sobre flujo básico del usuario dentro del sistema (Para este proyecto elegimos aplicación de escritorio).
 4.-Creación de las distintas UI's del sistema.
--- Fin Semana 2 Miércoles 02-04-2025 --
+-- Fin Semana 2 --
 
 -- Inicio semana 3 --
 Link para revisión UI en Figma:https://www.figma.com/design/OXqyzAwxWndCkYgBfufYoM/Dise%C3%B1o-de-interfaces-de-usuario?node-id=4-2&m=dev&t=cwBJVlQValt8bLj4-1
@@ -41,3 +41,11 @@ Adicionalmente, se procederá a realizar una breve presentación de lo trabajado
 
 Para complementar, los alumnos continuarán capacitándose en cursos de Microsoft Learn.
 -- Fin Semana 4 --
+
+-- Inicio semana 5 -- 
+
+-Continuamos capacitandonos en Microsoft Learn.
+-Comenzamos a realizar las actividades semanales correspondientes.
+-Comenzamos a realizar las interfaces , con el fin de plasmar lo más calcado posible a los diseños realizado en la etapa previa.
+-
+-- Fin semana 5 --
