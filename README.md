@@ -2,4 +2,17 @@
 Repositorio dedicado únicamente al Proyecto Semestral de la asignatura Github (Microsoft Learn)
 Este proyecto (aplicación de escritorio)utiliza el lenguaje de programación Java y se complementa con Swift, además de apoyarse en una API (PokeAPI).
 La idea principal se basa en el videojuego Pokémon. 
-Semana 4: Tecnologías que están siendo estudiadas o utilizadas: Github, Microsoft Learn
+--Inicio Semana 1--
+
+Creación del repositorio Proyecto Semestral.
+Adición de los colaboradores correspondientes.
+Creación de archivo README.md.
+Elección de módulos Microsoft Learn relacionados a GitHub.
+Elección de la licencia a utilizar durante el proyecto.
+AGREGAR INFORME COLABORATIVO***
+
+Pantallazos agregados
+Informe Agregado
+¡Semana 1 completada exitosamente!
+
+--Fin Semana 1--
