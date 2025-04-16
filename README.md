@@ -34,3 +34,10 @@ Informe Agregado
 Link para revisión UI en Figma:https://www.figma.com/design/OXqyzAwxWndCkYgBfufYoM/Dise%C3%B1o-de-interfaces-de-usuario?node-id=4-2&m=dev&t=cwBJVlQValt8bLj4-1
 -- Fin semana 3 --
 
+-- Inicio Semana 4 --
+
+Durante esta semana ambos integrantes del equipo de trabajo afinarán detalles correspondientes a lo trabajado durante la semana 2 y 3, esperando dejar lista esa etapa para proceder con la siguiente fase del proyecto.
+Adicionalmente, se procederá a realizar una breve presentación de lo trabajado hasta el momento en la sala de clases junto a sus demás compañeros y profesor.
+
+Para complementar, los alumnos continuarán capacitándose en cursos de Microsoft Learn.
+-- Fin Semana 4 --
