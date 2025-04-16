@@ -29,3 +29,8 @@ Informe Agregado
 3.-Creación del diseño sobre flujo básico del usuario dentro del sistema (Para este proyecto elegimos aplicación de escritorio).
 4.-Creación de las distintas UI's del sistema.
 -- Fin Semana 2 Miércoles 02-04-2025 --
+
+-- Inicio semana 3 --
+Link para revisión UI en Figma:https://www.figma.com/design/OXqyzAwxWndCkYgBfufYoM/Dise%C3%B1o-de-interfaces-de-usuario?node-id=4-2&m=dev&t=cwBJVlQValt8bLj4-1
+-- Fin semana 3 --
+
