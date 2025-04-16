@@ -44,8 +44,8 @@ Para complementar, los alumnos continuarán capacitándose en cursos de Microsof
 
 -- Inicio semana 5 -- 
 
--Continuamos capacitandonos en Microsoft Learn.
--Comenzamos a realizar las actividades semanales correspondientes.
--Comenzamos a realizar las interfaces , con el fin de plasmar lo más calcado posible a los diseños realizado en la etapa previa.
+- Continuamos capacitandonos en Microsoft Learn.
+- Comenzamos a realizar las actividades semanales correspondientes.
+- Comenzamos a realizar las interfaces , con el fin de plasmar lo más calcado posible a los diseños realizado en la etapa previa.
 -
 -- Fin semana 5 --
