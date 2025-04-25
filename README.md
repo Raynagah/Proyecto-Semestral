@@ -47,5 +47,5 @@ Para complementar, los alumnos continuarán capacitándose en cursos de Microsof
 - Continuamos capacitandonos en Microsoft Learn.
 - Comenzamos a realizar las actividades semanales correspondientes.
 - Comenzamos a realizar las interfaces , con el fin de plasmar lo más calcado posible a los diseños realizado en la etapa previa.
-- Complementamos esta fase con capacitación en interfaces gráficas utilizando netbeans y java, para trasladar el diseño de forma ordenada y orgánica.
+- Complementamos esta fase con capacitación en interfaces gráficas y lo más importante, un cambio surgió con el propósito de hacer las mismas de manera que sean más vistosas y atractivas. Esto nos supone un retraso con respecto a la semana 6 pero nos beneficiará en el desarrollo del proyecto.
 -- Fin semana 5 --
