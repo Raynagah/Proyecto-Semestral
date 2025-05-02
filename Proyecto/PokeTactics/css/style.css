@@ -14,7 +14,7 @@ body, html {
     font-size: 26px;
 }
 
-.contenedor{
+.index{
     border-radius: 2px;
     border-color: black;
     border-style: inset;
@@ -57,7 +57,7 @@ button:hover span {
     background: none;
 }
 
-.PaginaEleccion{
+.PEleccion{
     border-radius: 2px;
     border-color: black;
     border-style: inset;
@@ -65,6 +65,33 @@ button:hover span {
     width: 1200px;
     height: 630px;
     background-color: #bd008e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.PEJugadorR{
+    border-radius: 2px;
+    border-color: black;
+    border-style: inset;
+    align-items: center;
+    width: 1200px;
+    height: 630px;
+    background-image: url(../img/PEJugadorAUX.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.PERivalR{
+    border-radius: 2px;
+    border-color: black;
+    border-style: inset;
+    align-items: center;
+    width: 1200px;
+    height: 630px;
+    background-image: url(../img/PERivalAUX.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
