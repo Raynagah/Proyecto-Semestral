@@ -1,8 +1,8 @@
-# Proyecto de desarrollo Semestral
+# :penguin: Proyecto de desarrollo Semestral
 Sitio web desarrollado como parte del proyecto semestral que consiste en un simulador de duelos Pokemón con distintos modos de juego.
 
 ---
-## Tabla de contenidos
+## :leaves: Tabla de contenidos
 -[Descripción del proyecto](#-descripción-del-proyecto)
 -[Integrantes](#-integrantes)
 -[Tecnologías](#-tecnologías)
@@ -13,7 +13,7 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 
 ---
 
-## Integrantes
+## :space_invader: Integrantes
 |Nombre                      |Rol                    |
 |----------------------------|-----------------------|
 |Nicolás Bello|Desarollador BackEnd|
@@ -21,7 +21,7 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 
 ---
 
-## Tecnologías 
+## :book: Tecnologías 
 - HTML 5
 - JavaScript
 - CSS
@@ -29,7 +29,7 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 
 ---
 
-## Instalación
+## :cd: Instalación
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/Raynagah/Proyecto-Semestral 
@@ -37,7 +37,7 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 
 ---
 
-## Avances Semanales
+## :white_check_mark: Avances Semanales
 
 |Semana          |Avances                        |Link                               |
 |----------------|-------------------------------|-----------------------------------|
@@ -46,3 +46,5 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 |Semana 3|Revisión y ajustes de Prototipos|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%203)|
 |Semana 4|Presentación de la fase 1 del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%204)|
 |Semana 5|Desarrollo del Front End|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%205)|
+|Semana 6|Coordinación de Tareas y creación de carta Gantt|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%206)|
+|Semana 7|Realización de funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%207)|
