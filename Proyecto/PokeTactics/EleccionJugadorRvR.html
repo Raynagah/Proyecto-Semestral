@@ -7,34 +7,77 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="main">
-        <header class = "header">
-        </header>
-        <section class="contenido">
-            <div class="PEJugadorR">
-                <div class ="CDatos1">
-                    <div class ="BloqueImg">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png" alt="Imagen desde URL" class="imagenPokemon">
-                    </div>
-                    <div class="pokemon-info">Nombre: Drapion</div>
-                    <div class="pokemon-info">N. Pokédex: #452</div>
-                    <div class="pokemon-info">Naturaleza: Firme</div>
+<main class="main">
+    <header class="header">
+    </header>
+    <section class="contenido">
+        <div class="PEJugadorR">
+            <h1 class="titulo-superior">Elección Vs Aleatorio (Jugador)</h1>
+            <div class="CDatos1">
+                <div class="BloqueImg">
+                    <img id="imgPokemon" src="" alt="Imagen Pokémon" class="imagenPokemon">
                 </div>
-                <div class ="CDatos2">
-                    <div class ="BloqueImg">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png" alt="Imagen desde URL" class="imagenPokemon">
-                    </div>
-                </div>
-                <div class ="CDatos3">
-                    <button class="botonSPokemon" onclick="window.location.href='EleccionRivalRvR.html'">
-                        <span class="span"> Seleccionar Pokémon</span>
-                    </button>
-                    <button class="botonSPVolver" onclick="window.location.href='PaginaEleccion.html'">
-                        <span class="span"> Volver al menú</span>
-                    </button>
-                </div>
+                <div class="pokemon-info" id="nombrePokemon">Nombre: </div>
+                <div class="pokemon-info" id="numeroPokedex">N. Pokédex: </div>
+                <div class="pokemon-info" id="naturalezaPokemon">Naturaleza: </div>
             </div>
-        </section>
-    </main>
+            <div class="CDatos2">
+                <button class="botonRandom" onclick="buscarAleatorio()">
+                    <span class="span">Buscar Random</span>
+                </button>
+
+                <!-- Menú desplegable agregado aquí -->
+                <div class="Titulomovs">
+                    <label for="movimientos1">Elige un movimiento:</label>
+                </div>
+                <div class="selector-opciones">
+                    <select id="movimientos1" name="movimientos">
+                        <option value="ataque_rapido">Ataque Rápido</option>
+                        <option value="lanzallamas">Lanzallamas</option>
+                        <option value="rayo">Rayo</option>
+                        <option value="hidrobomba">Hidrobomba</option>
+                    </select>
+                </div>
+                <div class="selector-opciones">
+                    <select id="movimientos2" name="movimientos">
+                        <option value="ataque_rapido">Ataque Rápido</option>
+                        <option value="lanzallamas">Lanzallamas</option>
+                        <option value="rayo">Rayo</option>
+                        <option value="hidrobomba">Hidrobomba</option>
+                    </select>
+                </div>
+                <div class="selector-opciones">
+                    <select id="movimientos3" name="movimientos">
+                        <option value="ataque_rapido">Ataque Rápido</option>
+                        <option value="lanzallamas">Lanzallamas</option>
+                        <option value="rayo">Rayo</option>
+                        <option value="hidrobomba">Hidrobomba</option>
+                    </select>
+                </div>
+                <div class="selector-opciones">
+                    <select id="movimientos4" name="movimientos">
+                        <option value="ataque_rapido">Ataque Rápido</option>
+                        <option value="lanzallamas">Lanzallamas</option>
+                        <option value="rayo">Rayo</option>
+                        <option value="hidrobomba">Hidrobomba</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="CDatos3">
+                <button class="botonSPokemon" onclick="window.location.href='EleccionRivalRvR.html'">
+                    <span class="span">Seleccionar Pokémon</span>
+                </button>
+                <button class="botonSPVolver" onclick="window.location.href='PaginaEleccion.html'">
+                    <span class="span">Volver al menú</span>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="js/app.js"></script>
+
 </body>
+
 </html>
+
