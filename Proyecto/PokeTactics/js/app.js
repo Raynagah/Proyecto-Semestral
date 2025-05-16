@@ -3,7 +3,7 @@ async function buscarAleatorio() {
         // Mostrar mensaje de carga temporal
         document.getElementById('nombrePokemon').textContent = 'Nombre: Cargando...';
         document.getElementById('numeroPokedex').textContent = 'N. Pokédex: Cargando...';
-        document.getElementById('naturalezaPokemon').textContent = 'Naturaleza: Cargando...';
+        document.getElementById('tipoPokemon').textContent = 'Tipo: Cargando...';
         document.getElementById('imgPokemon').src = '';
 
         // Obtener lista de Pokémon
@@ -28,58 +28,91 @@ async function buscarAleatorio() {
 
         if (!pokemon) throw new Error('No se pudo encontrar un Pokémon con imagen.');
 
-        // Obtener naturaleza aleatoria
-        const respNaturalezas = await fetch('https://pokeapi.co/api/v2/nature?limit=25');
-        const dataNaturalezas = await respNaturalezas.json();
-        const listaNaturalezas = dataNaturalezas.results;
+        // Obtener nombre en español
+        const especie = await fetch(pokemon.species.url);
+        const datosEspecie = await especie.json();
+        const nombreES = datosEspecie.names.find(n => n.language.name === 'es').name;
 
-        const naturalezaURL = listaNaturalezas[Math.floor(Math.random() * listaNaturalezas.length)].url;
-        const respNaturaleza = await fetch(naturalezaURL);
-        const naturalezaData = await respNaturaleza.json();
-        const nombreNaturalezaES = naturalezaData.names.find(n => n.language.name === "es")?.name || naturalezaData.name;
+        // Obtener tipo en español
+        const tipoUrl = pokemon.types[0].type.url;
+        const tipoResp = await fetch(tipoUrl);
+        const tipoDatos = await tipoResp.json();
+        const tipoES = tipoDatos.names.find(n => n.language.name === 'es').name;
 
         // Mostrar datos en el HTML
-        document.getElementById('nombrePokemon').textContent = `Nombre: ${pokemon.name.toUpperCase()}`;
+        document.getElementById('nombrePokemon').textContent = `Nombre: ${nombreES}`;
         document.getElementById('numeroPokedex').textContent = `N. Pokédex: #${pokemon.id}`;
-        document.getElementById('naturalezaPokemon').textContent = `Naturaleza: ${nombreNaturalezaES}`;
+        document.getElementById('tipoPokemon').textContent = `Tipo: ${tipoES}`;
         document.getElementById('imgPokemon').src = pokemon.sprites.front_default;
 
-        // Obtener movimientos del Pokémon
-        const movimientos = pokemon.moves.map(m => m.move.name);
+        // Actualizar el logo del tipo de movimiento
+        actualizarLogoPorTipo(tipoES);
 
-        // Mezclar y seleccionar 4 movimientos aleatorios
-        const movimientosAleatorios = movimientos
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 4);
+        // Obtener movimientos en español
+        const movimientos = pokemon.moves.map(m => m.move.url);
+        const movimientosDetalles = await Promise.all(movimientos.map(url => fetch(url).then(res => res.json())));
+        const movimientosES = movimientosDetalles.map(m => {
+            const nombre = m.names.find(n => n.language.name === 'es');
+            return nombre ? nombre.name : m.name;
+        });
 
-        // Llenar los select con los movimientos
+        // Ordenar alfabéticamente
+        movimientosES.sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+
+        // Llenar cada <select> con todos los movimientos disponibles
         for (let i = 0; i < 4; i++) {
             const select = document.getElementById(`movimientos${i + 1}`);
             select.innerHTML = ''; // Limpiar opciones anteriores
 
-            if (movimientosAleatorios[i]) {
+            movimientosES.forEach(nombreMovimiento => {
                 const opcion = document.createElement('option');
-                opcion.value = movimientosAleatorios[i];
-                opcion.textContent = formatearMovimiento(movimientosAleatorios[i]);
+                opcion.value = nombreMovimiento;
+                opcion.textContent = formatearMovimiento(nombreMovimiento);
                 select.appendChild(opcion);
-            } else {
-                const opcion = document.createElement('option');
-                opcion.textContent = 'Ninguno';
-                select.appendChild(opcion);
-            }
+            });
         }
 
     } catch (error) {
         console.error('Error al buscar Pokémon:', error);
         document.getElementById('nombrePokemon').textContent = 'Error al cargar Pokémon.';
         document.getElementById('numeroPokedex').textContent = '';
-        document.getElementById('naturalezaPokemon').textContent = '';
+        document.getElementById('tipoPokemon').textContent = '';
         document.getElementById('imgPokemon').src = '';
 
         for (let i = 1; i <= 4; i++) {
             const select = document.getElementById(`movimientos${i}`);
             select.innerHTML = '<option>Error</option>';
         }
+    }
+}
+
+// Función auxiliar para actualizar el logo según el tipo de movimiento
+function actualizarLogoPorTipo(tipo) {
+    const tipoLogo = {
+        'Fuego': 'img/tipoPokemon/Fuego.webp',
+        'Agua': 'img/tipoPokemon/Agua.webp',
+        'Planta': 'img/tipoPokemon/Planta.webp',
+        'Eléctrico': 'img/tipoPokemon/Eléctrico.webp',
+        'Hielo': 'img/tipoPokemon/Hielo.webp',
+        'Lucha': 'img/tipoPokemon/Lucha.webp',
+        'Veneno': 'img/tipoPokemon/Veneno.webp',
+        'Tierra': 'img/tipoPokemon/Tierra.webp',
+        'Volador': 'img/tipoPokemon/Volador.webp',
+        'Psíquico': 'img/tipoPokemon/Psíquico.webp',
+        'Bicho': 'img/tipoPokemon/Bicho.webp',
+        'Roca': 'img/tipoPokemon/Roca.webp',
+        'Fantasma': 'img/tipoPokemon/Fantasma.webp',
+        'Dragón': 'img/tipoPokemon/Dragón.webp',
+        'Siniestro': 'img/tipoPokemon/Siniestro.webp',
+        'Acero': 'img/tipoPokemon/Acero.webp',
+        'Hada': 'img/tipoPokemon/Hada.webp',
+    };
+
+    const logoPath = tipoLogo[tipo];
+    if (logoPath) {
+        document.querySelector('.cuadro-color').style.backgroundImage = `url('${logoPath}')`;
+    } else {
+        document.querySelector('.cuadro-color').style.backgroundColor = '#ccc'; // Default if no type found
     }
 }
 

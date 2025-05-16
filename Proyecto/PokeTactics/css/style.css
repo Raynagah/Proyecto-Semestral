@@ -152,21 +152,23 @@ body, html {
         border: 2px solid black;
 }
 
-.selector-opciones{
-        margin-top: 12%;
-        margin-left: 15%;
-        width: 200px;
-        height: 30px;
+.selector-opciones {
+    margin-top: 7%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre elementos */
+    height: 42px;
 }
 
 .selector-opciones select {
-    width: 100%;  /* El select ocupa todo el ancho del contenedor */
-    height: 100%; /* Alto del cuadro */
-    font-size: 14px;  /* Tamaño de la fuente */
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 8px;  /* Bordes redondeados */
-    border: 2px solid #333;  /* Borde del recuadro */
-    background-color: #f1f1f1;  /* Color de fondo */
+    width: 150px;
+    height: 100%;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background-color: #f1f1f1;
     text-align: center;
 }
 
@@ -176,7 +178,25 @@ body, html {
     text-align: center;
 }
 
+/* Cuadrado de color */
+.cuadro-color {
+    width: 42px;
+    height: 42px;
+    background-color: #ccc; /* Fondo inicial */
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-size: cover; /* Asegura que la imagen se ajuste al tamaño del cuadro */
+}
 
+/* Rectángulo informativo */
+.rectangulo-info {
+    width: 65px;
+    height: 42px;
+    background-color: #eee;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin-right: 5%;
+}
 
 .CDatos3 {
     width: 290px;
