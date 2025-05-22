@@ -11,8 +11,19 @@
     <header class="header">
     </header>
     <section class="contenido">
-        <div class="PEJugadorR">
-            <h1 class="titulo-superior">Elección Vs Aleatorio (Jugador)</h1>
+        <div class="EleccionJugadorRvR">
+            <h1 class="titulo-superior">Aleatorio Vs Aleatorio (Jugador)</h1>
+            <!-- Botón fijo en la esquina superior derecha -->
+            <button id="botonAbrirModal" class="boton-modal">Tipos de pokémon</button>
+            <!-- Modal -->
+            <div id="modalImagen" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar">&times;</span>
+                    <h2>Tipos Pokémon</h2>
+                    <!-- Imagen por defecto mostrada en el modal -->
+                    <img src="img/tipoPokemon/TiposPokemon.webp" alt="Imagen por defecto" class="imagen-completa">
+                </div>
+            </div>
             <div class="CDatos1">
                 <div class="BloqueImg">
                     <img id="imgPokemon" src="" alt="Imagen Pokémon" class="imagenPokemon">
@@ -84,7 +95,7 @@
     </section>
 </main>
 <script src="js/app.js"></script>
-
+<script src="js/emergentes.js"></script>
 </body>
 
 </html>
