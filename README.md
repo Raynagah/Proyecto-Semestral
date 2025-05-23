@@ -50,3 +50,8 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 |Semana 7|Realización de funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%207)|
 |Semana 8|Avance funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%208)|
 |Semana 9|Término del Frontend e Implementación API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%209)|
+
+---
+
+## :book: Estado Actual del Proyecto
+- Nos encontramos en la semana 9 del proyecto, actualmente estamos enlazando la base de datos con el fin de realizar operaciones CRUD como guardar un pokemon, o eliminar pokemones.
