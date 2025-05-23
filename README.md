@@ -1,4 +1,4 @@
-# :penguin: Proyecto de desarrollo Semestral
+# :penguin: Proyecto de desarrollo Semestral PokeTactics
 Sitio web desarrollado como parte del proyecto semestral que consiste en un simulador de duelos Pokemón con distintos modos de juego.
 
 ---
