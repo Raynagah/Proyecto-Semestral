@@ -48,3 +48,5 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 |Semana 5|Desarrollo del Front End|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%205)|
 |Semana 6|Coordinación de Tareas y creación de carta Gantt|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%206)|
 |Semana 7|Realización de funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%207)|
+|Semana 8|Avance funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%208)|
+|Semana 9|Término del Frontend e Implementación API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%209)|
