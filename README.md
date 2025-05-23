@@ -21,12 +21,14 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 
 ---
 
-## :book: Tecnologías 
+## :book: Tecnologías Utilizadas
 - HTML 5
 - JavaScript
 - CSS
 - Git y Github
-
+- PHP
+- XAMPP
+- IA
 ---
 
 ## :cd: Instalación
