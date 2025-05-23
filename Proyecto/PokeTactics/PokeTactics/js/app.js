@@ -185,7 +185,7 @@ function guardarPokemonSeleccionado(pokemon, rol) {
     });
 }
 
-document.querySelector(".botonSPokemon").addEventListener("click", function () {
+/*document.querySelector(".botonSPokemon").addEventListener("click", function () {
     const pokemon = {
         nombre: document.getElementById("nombrePokemon").textContent.replace("Nombre: ", ""),
         numero: parseInt(document.getElementById("numeroPokedex").textContent.replace("N. Pokédex: ", "")),
@@ -201,4 +201,4 @@ document.querySelector(".botonSPokemon").addEventListener("click", function () {
     const rol = document.title.includes("Jugador") ? "jugador" : "rival";
 
     guardarPokemonSeleccionado(pokemon, rol);
-});
+});*/
