@@ -53,5 +53,5 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 
 ---
 
-## :book: Estado Actual del Proyecto
+## :bug: Estado Actual del Proyecto
 - Nos encontramos en la semana 9 del proyecto, actualmente estamos enlazando la base de datos con el fin de realizar operaciones CRUD como guardar un pokemon, o eliminar pokemones.
