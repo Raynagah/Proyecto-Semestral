@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EleccionJugador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="main">
+    <header class="header">
+    </header>
+    <section class="contenido">
+        <form action="guardar_pokemonRvR.php" method="post" class="EleccionJugadorRvR">
+            <input type="hidden" name="nombre" id="inputNombre">
+            <input type="hidden" name="pokedex" id="inputPokedex">
+            <h1 class="titulo-superior">Aleatorio Vs Aleatorio (Jugador)</h1>
+            <!-- Botón fijo en la esquina superior derecha -->
+            <button id="botonAbrirModal" class="boton-modal">Tipos de pokémon</button>
+            <!-- Modal -->
+            <div id="modalImagen" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar">&times;</span>
+                    <h2>Tipos Pokémon</h2>
+                    <!-- Imagen por defecto mostrada en el modal -->
+                    <img src="img/tipoPokemon/TiposPokemon.webp" alt="Imagen por defecto" class="imagen-completa">
+                </div>
+            </div>
+            <div class="CDatos1">
+                <div class="BloqueImg">
+                    <img id="imgPokemon" src="" alt="Imagen Pokémon" class="imagenPokemon">
+                </div>
+                <div class="pokemon-info" id="nombrePokemon">Nombre: </div>
+                <div class="pokemon-info" id="numeroPokedex">N. Pokédex: </div>
+                <div class="pokemon-info" id="tipoPokemon">Naturaleza: </div>
+            </div>
+            <div class="CDatos2">
+                <button type="button" class="botonRandom" onclick="buscarAleatorio()">
+                    <span class="span">Buscar Random</span>
+                </button>
+
+                <!-- Menú desplegable agregado aquí -->
+                <div class="Titulomovs">
+                    <label for="movimientos1">Elige un movimiento:</label>
+                </div>
+                <div class="selector-opciones">
+                    <select name="movimiento1" id="movimientos1"></select>
+                    <div class="cuadro-color" id="logotipo1"></div>
+                    <div class="rectangulo-info"></div>
+                </div>
+                <div class="selector-opciones">
+                    <select name="movimiento2" id="movimientos2"></select>
+                    <div class="cuadro-color" id="logotipo2"></div>
+                    <div class="rectangulo-info"></div>
+                </div>
+                <div class="selector-opciones">
+                    <select name="movimiento3" id="movimientos3"></select>
+                    <div class="cuadro-color" id="logotipo3"></div>
+                    <div class="rectangulo-info"></div>
+                </div>
+                <div class="selector-opciones">
+                    <select name="movimiento4" id="movimientos4"></select>
+                    <div class="cuadro-color" id="logotipo4"></div>
+                    <div class="rectangulo-info"></div>
+                </div>
+
+            </div>
+        
+            <div class="CDatos3">
+                <button type="submit" class="botonSPokemon">
+                    <span class="span">Seleccionar Pokémon</span>
+                </button>
+                <button type="button" class="botonSPVolver" onclick="window.location.href='PaginaEleccion.html'">
+                    <span class="span">Volver al menú</span>
+                </button>
+            </div>
+        </form>
+    </section>
+</main>
+<script src="js/app.js"></script>
+<script src="js/emergentes.js"></script>
+<script>
+    // Rellena los campos ocultos antes de enviar el formulario
+    document.querySelector('form').addEventListener('submit', function () {
+        const nombre = document.getElementById('nombrePokemon').textContent.replace('Nombre: ', '').trim();
+        const pokedexTexto = document.getElementById('numeroPokedex').textContent.replace('N. Pokédex: ', '').trim();
+        const pokedex = pokedexTexto.replace('#', '').trim(); // Quitar el #
+    
+        document.getElementById('inputNombre').value = nombre;
+        document.getElementById('inputPokedex').value = pokedex;
+    });
+</script>
+</body>
+
+</html>

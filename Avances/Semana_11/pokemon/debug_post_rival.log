@@ -1,0 +1,54 @@
+2025-05-23T06:03:50+02:00 Array
+(
+    [movimiento1] => Carantoña
+    [movimiento2] => Campo Eléctrico
+    [movimiento3] => Bofetón Lodo
+    [movimiento4] => Amago
+    [id] => 1
+    [nombre] => Pikachu
+    [pokedex] => #25
+)
+
+2025-05-23T06:03:50+02:00 Guarda OK: id=2, nombre=Pikachu
+2025-05-23T06:07:04+02:00 Array
+(
+    [movimiento1] => Abatidoras
+    [movimiento2] => Abatidoras
+    [movimiento3] => Abatidoras
+    [movimiento4] => Abatidoras
+    [id] => 1
+    [nombre] => Bulbasaur
+    [pokedex] => #1
+)
+
+2025-05-23T06:07:04+02:00 Guarda OK: id=2, nombre=Bulbasaur
+2025-05-23T06:29:22+02:00 Array
+(
+    [movimiento1] => Canto Encantador
+    [movimiento2] => Canon
+    [movimiento3] => Bofetón Lodo
+    [movimiento4] => Atracción
+    [id] => 1
+    [nombre] => Pikachu
+    [pokedex] => #25
+)
+
+2025-05-23T06:29:22+02:00 Guarda OK: id=2, nombre=Pikachu
+2025-05-23T06:32:43+02:00 Array
+(
+    [movimiento1] => Campo Eléctrico
+    [movimiento2] => Bola Voltio
+    [movimiento3] => Canto Encantador
+    [movimiento4] => Beso Dulce
+    [id] => 1
+    [nombre] => Pikachu
+    [pokedex] => #25
+)
+
+2025-05-23T06:32:43+02:00 Guarda OK: id=2, nombre=Pikachu
+2025-06-04T17:50:40+02:00 Guarda OK: id=2, nombre=Charizard
+2025-06-04T18:45:13+02:00 Guarda OK: id=2, nombre=Palkia
+2025-06-04T18:56:07+02:00 Guarda OK: id=2, nombre=Charizard
+2025-06-04T18:59:37+02:00 Guarda OK: id=2, nombre=Cargando...
+2025-06-04T19:00:40+02:00 Guarda OK: id=2, nombre=Suicune
+2025-06-04T19:01:48+02:00 Guarda OK: id=2, nombre=Sunkern
