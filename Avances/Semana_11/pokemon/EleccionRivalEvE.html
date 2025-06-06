@@ -5,14 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Elección Vs Elección (Rival)</title>
-    <link rel="stylesheet" href="css/style_rival.css" />
+    <title>EleccionRivalRvR</title>
+    <link rel="stylesheet" href="css/Base/base.css">
+    <link rel="stylesheet" href="css/Rival/rival.css">
+    <link rel="stylesheet" href="css/Rival/rival_eleccion.css">
 </head>
 
 <body>
     <main class="main">
         <header class="header"></header>
         <section class="contenido">
-            <form action="guardar_pokemon_rival.php" method="post" class="EleccionRivalEvE">
+            <form action="./php/guardar_pokemon_rival.php" method="post" class="EleccionRivalEvE">
                 <h1 class="titulo-superior_rival">Elección Vs Elección (Rival)</h1>
 
                 <button type="button" id="botonAbrirModal_rival" class="boton-modal_rival">Tipos de pokémon</button>
@@ -95,8 +98,8 @@
             const pokedexTexto = document.getElementById('numeroPokedex_rival').textContent.replace('N. Pokédex: ', '').trim();
             const pokedex = pokedexTexto.replace('#', '').trim(); // Quitar el #
         
-            document.getElementById('inputNombre').value = nombre;
-            document.getElementById('inputPokedex').value = pokedex;
+            document.getElementById('inputNombre_rival').value = nombre;
+            document.getElementById('inputPokedex_rival').value = pokedex;
         });
     </script>
 </body>
