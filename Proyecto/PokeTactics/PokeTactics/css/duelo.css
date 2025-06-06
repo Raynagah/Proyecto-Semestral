@@ -14,14 +14,14 @@ html, body {
     position: relative;
     border-radius: 2px;
     border: inset 2px black;
-    width: 90vw;          /* ocupa 90% del ancho de la ventana */
-    max-width: 1200px;    /* pero no más de 1200px */
+    height: 630px;          /* ocupa 90% del ancho de la ventana */
+    width: 1200px;    /* pero no más de 1200px */
     aspect-ratio: 1200 / 630; /* mantiene proporción 1200x630 */
     background-image: url(../img/fondoDuelo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,13 +39,10 @@ html, body {
     height: 25%; /* proporcional al contenedor */
     background-color: #e0e0e0;
     border-top: 3px solid black;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -64,10 +61,10 @@ html, body {
 }
 
 .boton-ataque {
-    background-color: #666;
+    background-color: #2868f3;
 }
 .boton-ataque:hover {
-    background-color: #555;
+    background-color: #10681f;
 }
 .boton-terminar {
     background-color: red;
