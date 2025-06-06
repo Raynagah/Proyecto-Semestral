@@ -52,3 +52,8 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 |Semana 9|Término del Frontend e Implementación API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%209)|
 |Semana 10|Término del Backend y testeo API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%210)|
 |Semana 11|Optimización BD|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%211)|
+
+---
+
+## :bug: Estado Actual del Proyecto
+- Nos encontramos en la semana 11 del proyecto, actualmente estamos trabajando en la realización de correcciones al frontend.
