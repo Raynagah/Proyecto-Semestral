@@ -1,0 +1,34 @@
+function actualizarLogoPorTipo(tipo, idLogo) {
+    const tipoLogo = {
+        'Fuego': 'img/tipoPokemon/Fuego.webp',
+        'Agua': 'img/tipoPokemon/Agua.webp',
+        'Planta': 'img/tipoPokemon/Planta.webp',
+        'Eléctrico': 'img/tipoPokemon/Eléctrico.webp',
+        'Hielo': 'img/tipoPokemon/Hielo.webp',
+        'Lucha': 'img/tipoPokemon/Lucha.webp',
+        'Veneno': 'img/tipoPokemon/Veneno.webp',
+        'Tierra': 'img/tipoPokemon/Tierra.webp',
+        'Volador': 'img/tipoPokemon/Volador.webp',
+        'Psíquico': 'img/tipoPokemon/Psíquico.webp',
+        'Bicho': 'img/tipoPokemon/Bicho.webp',
+        'Roca': 'img/tipoPokemon/Roca.webp',
+        'Fantasma': 'img/tipoPokemon/Fantasma.webp',
+        'Dragón': 'img/tipoPokemon/Dragón.webp',
+        'Siniestro': 'img/tipoPokemon/Siniestro.webp',
+        'Acero': 'img/tipoPokemon/Acero.webp',
+        'Hada': 'img/tipoPokemon/Hada.webp',
+        'Normal': 'img/tipoPokemon/Normal.webp'
+    };
+
+    const logoPath = tipoLogo[tipo] || null;
+    const target = document.getElementById(idLogo);
+
+    if (logoPath && target) {
+        target.style.backgroundImage = `url('${logoPath}')`;
+        target.style.backgroundSize = 'cover';
+        target.style.backgroundColor = 'transparent';
+    } else if (target) {
+        target.style.backgroundImage = '';
+        target.style.backgroundColor = '#ccc';
+    }
+}

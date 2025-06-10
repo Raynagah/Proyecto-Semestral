@@ -51,29 +51,75 @@ async function buscarAleatorio() {
         document.getElementById('tipoPokemon').textContent = `Tipo: ${tipoES}`;
         document.getElementById('imgPokemon').src = pokemon.sprites.front_default;
 
-        // Mostrar el tipo del Pokémon en algún ícono general
         actualizarLogoPorTipo(tipoES, 'logoTipoPokemon');
 
-        const movimientos = pokemon.moves.slice(0, 4); // Solo 4 primeros
+        // Obtener todos los movimientos del Pokémon
+        const movimientos = pokemon.moves;
 
-        for (let i = 0; i < 4; i++) {
-            const movimiento = movimientos[i];
-            const movimientoDetalle = await fetch(movimiento.move.url).then(res => res.json());
-
-            const nombreES = movimientoDetalle.names.find(n => n.language.name === 'es')?.name || movimientoDetalle.name;
-            const tipoMovimientoURL = movimientoDetalle.type.url;
-            const tipoMovimientoData = await fetch(tipoMovimientoURL).then(res => res.json());
-            const tipoMovimiento = tipoMovimientoData.names.find(n => n.language.name === 'es')?.name || movimientoDetalle.type.name;
-
-            const select = document.getElementById(`movimientos${i + 1}`);
+        // Limpiar todos los selects de movimientos
+        for (let i = 1; i <= 4; i++) {
+            const select = document.getElementById(`movimientos${i}`);
             select.innerHTML = '';
+            
+            const opcionVacia = document.createElement('option');
+            opcionVacia.value = '';
+            opcionVacia.textContent = 'Movimiento ' + i;
+            select.appendChild(opcionVacia);
+        }
 
-            const opcion = document.createElement('option');
-            opcion.value = nombreES;
-            opcion.textContent = formatearMovimiento(nombreES);
-            select.appendChild(opcion);
+        // Crear un array para almacenar los datos de los movimientos
+        const movimientosData = [];
 
-            actualizarLogoPorTipo(tipoMovimiento, `logotipo${i + 1}`);
+        // Recolectar información de los movimientos
+        for (const movimiento of movimientos) {
+            const movimientoDetalle = await fetch(movimiento.move.url).then(res => res.json());
+            
+            const nombreEN = movimientoDetalle.name;
+            const nombreES = movimientoDetalle.names.find(n => n.language.name === 'es')?.name || nombreEN;
+            const tipoMovimiento = movimientoDetalle.type.name;
+
+            movimientosData.push({
+                nombreEN,
+                nombreES,
+                tipoMovimiento
+            });
+        }
+
+        // Llenar cada select con todos los movimientos disponibles
+        for (const movimiento of movimientosData) {
+            for (let i = 1; i <= 4; i++) {
+                const select = document.getElementById(`movimientos${i}`);
+                const opcion = document.createElement('option');
+                opcion.value = movimiento.nombreEN; // Valor interno en inglés
+                opcion.textContent = formatearMovimiento(movimiento.nombreES); // Mostrar en español
+                opcion.dataset.tipo = movimiento.tipoMovimiento; // Almacenar tipo
+                select.appendChild(opcion);
+            }
+        }
+
+        // Actualizar event listeners para los selects
+        for (let i = 1; i <= 4; i++) {
+            const select = document.getElementById(`movimientos${i}`);
+            select.replaceWith(select.cloneNode(true));
+            
+            document.getElementById(`movimientos${i}`).addEventListener('change', async function() {
+                const selectedOption = this.options[this.selectedIndex];
+                if (selectedOption.value) {
+                    const tipoEN = selectedOption.dataset.tipo;
+                    const tipoES = await obtenerNombreTipoEnEspanol(tipoEN);
+                    actualizarLogoPorTipo(tipoES, `logotipo${i}`);
+                }
+            });
+        }
+
+        // Actualizar el logo del tipo para el primer movimiento (si existe)
+        if (movimientosData.length > 0) {
+            const tipoPrimerMovimiento = movimientosData[0].tipoMovimiento;
+            const tipoES = await obtenerNombreTipoEnEspanol(tipoPrimerMovimiento);
+            
+            for (let i = 1; i <= 4; i++) {
+                actualizarLogoPorTipo(tipoES, `logotipo${i}`);
+            }
         }
 
     } catch (error) {
@@ -88,6 +134,50 @@ async function buscarAleatorio() {
             select.innerHTML = '<option>Error</option>';
         }
     }
+}
+
+async function obtenerNombreTipoEnEspanol(tipoEN) {
+    const tipoMap = {
+        'fire': 'Fuego',
+        'water': 'Agua',
+        'grass': 'Planta',
+        'electric': 'Eléctrico',
+        'ice': 'Hielo',
+        'fighting': 'Lucha',
+        'poison': 'Veneno',
+        'ground': 'Tierra',
+        'flying': 'Volador',
+        'psychic': 'Psíquico',
+        'bug': 'Bicho',
+        'rock': 'Roca',
+        'ghost': 'Fantasma',
+        'dragon': 'Dragón',
+        'dark': 'Siniestro',
+        'steel': 'Acero',
+        'fairy': 'Hada',
+        'normal': 'Normal',
+        // Compatibilidad con versiones en español
+        'Fuego': 'Fuego',
+        'Agua': 'Agua',
+        'Planta': 'Planta',
+        'Eléctrico': 'Eléctrico',
+        'Hielo': 'Hielo',
+        'Lucha': 'Lucha',
+        'Veneno': 'Veneno',
+        'Tierra': 'Tierra',
+        'Volador': 'Volador',
+        'Psíquico': 'Psíquico',
+        'Bicho': 'Bicho',
+        'Roca': 'Roca',
+        'Fantasma': 'Fantasma',
+        'Dragón': 'Dragón',
+        'Siniestro': 'Siniestro',
+        'Acero': 'Acero',
+        'Hada': 'Hada',
+        'Normal': 'Normal'
+    };
+
+    return tipoMap[tipoEN] || tipoEN;
 }
 
 function actualizarLogoPorTipo(tipo, idLogo) {
@@ -135,12 +225,8 @@ function formatearMovimiento(nombre) {
 
 async function obtenerTipoMovimientoPorNombre(nombreMovimiento) {
     try {
-        const response = await fetch('https://pokeapi.co/api/v2/move?limit=1000');
-        const data = await response.json();
-        const movimiento = data.results.find(m => m.name === nombreMovimiento.toLowerCase());
-        if (!movimiento) return 'Normal';
-
-        const detalle = await fetch(movimiento.url).then(res => res.json());
+        const response = await fetch(`https://pokeapi.co/api/v2/move/${nombreMovimiento.toLowerCase()}`);
+        const detalle = await response.json();
         const tipoUrl = detalle.type.url;
         const tipoData = await fetch(tipoUrl).then(res => res.json());
         const tipoES = tipoData.names.find(n => n.language.name === 'es')?.name || detalle.type.name;
@@ -152,11 +238,6 @@ async function obtenerTipoMovimientoPorNombre(nombreMovimiento) {
     }
 }
 
-
-
-
-
-// Función para guardar el Pokémon seleccionado en la base de datos
 function guardarPokemonSeleccionado(pokemon, rol) {
     fetch('http://localhost/PokeTactics/guardar_pokemon.php', {
         method: 'POST',
@@ -167,7 +248,7 @@ function guardarPokemonSeleccionado(pokemon, rol) {
             nombre: pokemon.nombre,
             numero: pokemon.numero,
             tipo: pokemon.tipo,
-            movimientos: pokemon.movimientos, // Array de 4 movimientos
+            movimientos: pokemon.movimientos,
             rol: rol
         })
     })
@@ -185,7 +266,7 @@ function guardarPokemonSeleccionado(pokemon, rol) {
     });
 }
 
-/*document.querySelector(".botonSPokemon").addEventListener("click", function () {
+document.querySelector(".botonSPokemon").addEventListener("click", function () {
     const pokemon = {
         nombre: document.getElementById("nombrePokemon").textContent.replace("Nombre: ", ""),
         numero: parseInt(document.getElementById("numeroPokedex").textContent.replace("N. Pokédex: ", "")),
@@ -201,4 +282,4 @@ function guardarPokemonSeleccionado(pokemon, rol) {
     const rol = document.title.includes("Jugador") ? "jugador" : "rival";
 
     guardarPokemonSeleccionado(pokemon, rol);
-});*/
+});
