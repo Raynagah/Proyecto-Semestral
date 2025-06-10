@@ -1,4 +1,4 @@
-# :penguin: Proyecto de desarrollo Semestral
+# :penguin: Proyecto de desarrollo Semestral PokeTactics
 Sitio web desarrollado como parte del proyecto semestral que consiste en un simulador de duelos Pokemón con distintos modos de juego.
 
 ---
@@ -21,12 +21,14 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 
 ---
 
-## :book: Tecnologías 
+## :book: Tecnologías Utilizadas
 - HTML 5
 - JavaScript
 - CSS
 - Git y Github
-
+- PHP
+- XAMPP
+- IA
 ---
 
 ## :cd: Instalación
@@ -57,3 +59,4 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 
 ## :bug: Estado Actual del Proyecto
 - Nos encontramos en la semana 11 del proyecto, actualmente estamos trabajando en la realización de correcciones al frontend.
+=======
