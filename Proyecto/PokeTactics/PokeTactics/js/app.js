@@ -14,7 +14,10 @@ async function buscarAleatorio() {
         document.getElementById('nombrePokemon').textContent = 'Nombre: Cargando...';
         document.getElementById('numeroPokedex').textContent = 'N. Pokédex: Cargando...';
         document.getElementById('tipoPokemon').textContent = 'Tipo: Cargando...';
-        document.getElementById('imgPokemon').src = '';
+
+        document.getElementById('imgPokemon').src = "img/pokemon/cargando2.gif";
+        // Pendiente de hacer bien, todavía no funciona lo de la carga del gif mientras busca el Pokémon
+        document.getElementById('imgPokemon').alt = 'Buscando Pokémon...';
 
         const respuesta = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1010');
         const datos = await respuesta.json();
