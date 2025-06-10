@@ -59,4 +59,5 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 
 ## :bug: Estado Actual del Proyecto
 - Nos encontramos en la semana 11 del proyecto, actualmente estamos trabajando en la realización de correcciones al frontend.
-=======
+
+---
