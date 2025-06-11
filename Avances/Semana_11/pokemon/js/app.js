@@ -285,3 +285,129 @@ document.querySelector(".botonSPokemon").addEventListener("click", function () {
 
     guardarPokemonSeleccionado(pokemon, rol);
 });
+
+// Función auxiliar para formatear nombres de movimientos
+function formatearMovimiento(nombre) {
+    return nombre
+        .replace(/-/g, ' ')
+        .split(' ')
+        .map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1))
+        .join(' ');
+}
+
+
+//Funcion para buscar pokemon por nombre o numero de pokedex
+async function buscarPorNombreONumero() {
+    const input = document.getElementById('inputBusqueda').value.trim().toLowerCase();
+    if (!input) return;
+
+    try {
+        document.getElementById('nombrePokemon').textContent = 'Nombre: Cargando...';
+        document.getElementById('numeroPokedex').textContent = 'N. Pokédex: Cargando...';
+        document.getElementById('tipoPokemon').textContent = 'Tipo: Cargando...';
+        document.getElementById('imgPokemon').src = '';
+
+        const respuesta = await fetch(`https://pokeapi.co/api/v2/pokemon/${input}`);
+        if (!respuesta.ok) throw new Error('Pokémon no encontrado');
+
+        const pokemon = await respuesta.json();
+
+        const especie = await fetch(pokemon.species.url);
+        const datosEspecie = await especie.json();
+        const nombreES = datosEspecie.names.find(n => n.language.name === 'es')?.name || pokemon.name;
+
+        const tipoUrl = pokemon.types[0].type.url;
+        const tipoResp = await fetch(tipoUrl);
+        const tipoDatos = await tipoResp.json();
+        const tipoES = tipoDatos.names.find(n => n.language.name === 'es')?.name || pokemon.types[0].type.name;
+
+        document.getElementById('nombrePokemon').textContent = `Nombre: ${nombreES}`;
+        document.getElementById('numeroPokedex').textContent = `N. Pokédex: #${pokemon.id}`;
+        document.getElementById('tipoPokemon').textContent = `Tipo: ${tipoES}`;
+        document.getElementById('imgPokemon').src = pokemon.sprites.front_default;
+
+        actualizarLogoPorTipo(tipoES, 'logoTipoPokemon');
+
+        // Limpiar todos los selects de movimientos
+        for (let i = 1; i <= 4; i++) {
+            const select = document.getElementById(`movimientos${i}`);
+            select.innerHTML = '';
+            
+            const opcionVacia = document.createElement('option');
+            opcionVacia.value = '';
+            opcionVacia.textContent = 'Movimiento ' + i;
+            select.appendChild(opcionVacia);
+        }
+
+        // Obtener todos los movimientos del Pokémon
+        const movimientos = pokemon.moves;
+
+        // Crear un array para almacenar los datos de los movimientos
+        const movimientosData = [];
+
+        // Recolectar información de los movimientos
+        for (const movimiento of movimientos) {
+            const movimientoDetalle = await fetch(movimiento.move.url).then(res => res.json());
+            
+            const nombreEN = movimientoDetalle.name;
+            const nombreES = movimientoDetalle.names.find(n => n.language.name === 'es')?.name || nombreEN;
+            const tipoMovimiento = movimientoDetalle.type.name;
+
+            movimientosData.push({
+                nombreEN,
+                nombreES,
+                tipoMovimiento
+            });
+        }
+
+        // Llenar cada select con todos los movimientos disponibles
+        for (const movimiento of movimientosData) {
+            for (let i = 1; i <= 4; i++) {
+                const select = document.getElementById(`movimientos${i}`);
+                const opcion = document.createElement('option');
+                opcion.value = movimiento.nombreEN; // Valor interno en inglés
+                opcion.textContent = formatearMovimiento(movimiento.nombreES); // Mostrar en español
+                opcion.dataset.tipo = movimiento.tipoMovimiento; // Almacenar tipo
+                select.appendChild(opcion);
+            }
+        }
+
+        // Actualizar event listeners para los selects
+        for (let i = 1; i <= 4; i++) {
+            const select = document.getElementById(`movimientos${i}`);
+            select.replaceWith(select.cloneNode(true));
+            
+            document.getElementById(`movimientos${i}`).addEventListener('change', async function() {
+                const selectedOption = this.options[this.selectedIndex];
+                if (selectedOption.value) {
+                    const tipoEN = selectedOption.dataset.tipo;
+                    const tipoES = await obtenerNombreTipoEnEspanol(tipoEN);
+                    actualizarLogoPorTipo(tipoES, `logotipo${i}`);
+                }
+            });
+        }
+
+        // Actualizar el logo del tipo para el primer movimiento (si existe)
+        if (movimientosData.length > 0) {
+            const tipoPrimerMovimiento = movimientosData[0].tipoMovimiento;
+            const tipoES = await obtenerNombreTipoEnEspanol(tipoPrimerMovimiento);
+            
+            for (let i = 1; i <= 4; i++) {
+                actualizarLogoPorTipo(tipoES, `logotipo${i}`);
+            }
+        }
+
+    } catch (error) {
+        console.error('Error en la búsqueda:', error);
+        document.getElementById('nombrePokemon').textContent = 'No se encontró el Pokémon.';
+        document.getElementById('numeroPokedex').textContent = '';
+        document.getElementById('tipoPokemon').textContent = '';
+        document.getElementById('imgPokemon').src = '';
+        
+        for (let i = 1; i <= 4; i++) {
+            const select = document.getElementById(`movimientos${i}`);
+            select.innerHTML = '<option>Error</option>';
+        }
+    }
+}
+
