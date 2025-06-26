@@ -60,5 +60,5 @@ if (!$stmt->execute()) {
 file_put_contents(__DIR__ . '/debug_post_rival.log', date('c') . " Guarda OK: id=$id, nombre=$nombre\n", FILE_APPEND);
 
 // Redirigir a la página rival después de guardar
-header('Location: ../Duelo.html', true, 303);
+header('Location: ../Duelo.php', true, 303);
 exit;
