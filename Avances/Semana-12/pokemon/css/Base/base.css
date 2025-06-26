@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    font-size: 26px;
+    flex-direction: row;
+    display: flex;
+}
+
+/* Modal styles */
+.modal, .modal_rival {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-contenido, .modal-contenido_rival {
+    position: relative;
+    margin: 2% auto;
+    width: fit-content;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.cerrar, .cerrar_rival {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.imagen-completa, .imagen-completa_rival {
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    max-height: 100%;
+    display: block;
+}
+
+/* Button styles */
+button span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+/* Modal button */
+.boton-modal, .boton-modal_rival {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Title styles */
+.titulo-superior, .titulo-superior_rival {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px #000;
+    z-index: 50;
+}
