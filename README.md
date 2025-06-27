@@ -32,11 +32,14 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 ---
 
 ## :cd: Instalación
-1. Clonar el repositorio:
+1. Clonar el repositorio en la carpeta htdocs de Xampp:
 ```bash
 git clone https://github.com/Raynagah/Proyecto-Semestral 
 ```
-
+2. Utilizar la ruta localhost/pokemon para acceder a la página de inicio
+```bash
+localhost/pokemon
+```
 ---
 
 ## :white_check_mark: Avances Semanales
