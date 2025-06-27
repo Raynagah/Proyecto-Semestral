@@ -43,7 +43,7 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 
 |Semana          |Avances                        |Link                               |
 |----------------|-------------------------------|-----------------------------------|
-|Semana 1|Inicio del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-201)|
+|Semana 1|Inicio del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-1)|
 |Semana 2|Desarrollo de prototipos en Figma|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-202)|
 |Semana 3|Revisión y ajustes de Prototipos|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-203)|
 |Semana 4|Presentación de la fase 1 del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-204)|
