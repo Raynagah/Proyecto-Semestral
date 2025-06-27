@@ -44,17 +44,17 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 |Semana          |Avances                        |Link                               |
 |----------------|-------------------------------|-----------------------------------|
 |Semana 1|Inicio del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-1)|
-|Semana 2|Desarrollo de prototipos en Figma|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-202)|
-|Semana 3|Revisión y ajustes de Prototipos|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-203)|
-|Semana 4|Presentación de la fase 1 del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-204)|
-|Semana 5|Desarrollo del Front End|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-205)|
-|Semana 6|Coordinación de Tareas y creación de carta Gantt|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-206)|
-|Semana 7|Realización de funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-207)|
-|Semana 8|Avance funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-208)|
-|Semana 9|Término del Frontend e Implementación API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-209)|
-|Semana 10|Término del Backend y testeo API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-210)|
-|Semana 11|Optimización BD|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-211)|
-|Semana 12|Adición Duelo.php más mejoras QOL en todas las pantallas de selección de modo|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-212)|
+|Semana 2|Desarrollo de prototipos en Figma|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-2)|
+|Semana 3|Revisión y ajustes de Prototipos|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-3)|
+|Semana 4|Presentación de la fase 1 del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-4)|
+|Semana 5|Desarrollo del Front End|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-5)|
+|Semana 6|Coordinación de Tareas y creación de carta Gantt|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-6)|
+|Semana 7|Realización de funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-7)|
+|Semana 8|Avance funcionalidades clave|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-8)|
+|Semana 9|Término del Frontend e Implementación API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-9)|
+|Semana 10|Término del Backend y testeo API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-10)|
+|Semana 11|Optimización BD|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-11)|
+|Semana 12|Adición Duelo.php más mejoras QOL en todas las pantallas de selección de modo|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-12)|
 
 ---
 
