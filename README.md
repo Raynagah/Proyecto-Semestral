@@ -54,10 +54,11 @@ git clone https://github.com/Raynagah/Proyecto-Semestral
 |Semana 9|Término del Frontend e Implementación API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%209)|
 |Semana 10|Término del Backend y testeo API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%210)|
 |Semana 11|Optimización BD|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%211)|
+|Semana 12|Adición Duelo.php más mejoras QOL en todas las pantallas de selección de modo|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana%212)|
 
 ---
 
 ## :bug: Estado Actual del Proyecto
-- Nos encontramos en la semana 11 del proyecto, actualmente estamos trabajando en la realización de correcciones al frontend.
+- Nos encontramos en la semana 12 del proyecto, actualmente estamos trabajando en la realización de mejoras QOL para cada modo de selección y animaciones simples para la página de duelo.
 
 ---
