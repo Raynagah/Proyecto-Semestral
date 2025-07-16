@@ -1,0 +1,10 @@
+Array
+(
+    [movimiento1] => mega-kick
+    [movimiento2] => seismic-toss
+    [movimiento3] => mud-slap
+    [movimiento4] => flamethrower
+    [id] => 1
+    [nombre] => Typhlosion
+    [pokedex] => 157
+)
