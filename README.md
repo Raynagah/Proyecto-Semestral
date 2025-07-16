@@ -68,7 +68,7 @@ http://mytactics.x10.mx/Index.html
 |Semana 12|Adición Duelo.php más mejoras QOL en todas las pantallas de selección de modo|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-12)|
 |Semana 13|Despliegue del proyecto en plataforma X10Hosting|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-13)|
 |Semana 14|Mejoras en archivos Duelo.php, funcionesduelo.js y duelo.css|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-14)|
-|Semana 15|Correcciones en archivos correspondientes a la semana 14|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-15)|
+|Semana 15|Correcciones en archivos correspondientes a la semana 14 + Evidencia realización cursos microsoft learn|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-15)|
 |Semana 16|Archivos de página Duelo finalizados e implementados en producción + Presentación formal del proyecto terminado|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-16)|
 ---
 
