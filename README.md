@@ -52,8 +52,8 @@ http://mytactics.x10.mx/Index.html
 
 ## :white_check_mark: Avances Semanales
 
-|Semana          |Avances                        |Link                               |
-|----------------|-------------------------------|-----------------------------------|
+|Semana                   |Avances                        |Link                               |
+|-------------------------|-------------------------------|-----------------------------------|
 |Semana 1|Inicio del proyecto|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-1)|
 |Semana 2|Desarrollo de prototipos en Figma|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-2)|
 |Semana 3|Revisión y ajustes de Prototipos|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-3)|
