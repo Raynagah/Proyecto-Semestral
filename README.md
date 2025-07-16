@@ -73,6 +73,6 @@ http://mytactics.x10.mx/Index.html
 ---
 
 ## :bug: Estado Actual del Proyecto
-- Nos encontramos en la semana 16 del proyecto, actualmente hemos finalizado con el desarrollo de este mini-proyecto académico, hemos concluido con el despliegue en un servicio de Hosting gratuito (x10Hosting).
+- Nos encontramos en la semana 16, actualmente hemos finalizado con el desarrollo de este mini-proyecto académico, hemos concluido con el despliegue en un servicio de Hosting gratuito (x10Hosting).
 
 ---
