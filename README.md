@@ -29,6 +29,7 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 - PHP
 - XAMPP
 - IA
+- X10Hosting
 ---
 
 ## :cd: Utilización del proyecto
@@ -45,8 +46,8 @@ http://mytactics.x10.mx/Index.html
 ```
 4. Buscar o Seleccionar un pokemón según sus preferencias
 5. Proceder a la realización del duelo
-6. Elegir movivimientos durante el combate
-7. Elegir entre "Terminar batalla" o "Volver al menú principal" según su preferencia
+6. Elegir movivimientos durante el combate o elegir entre "Terminar batalla" o "Volver al menú principal" según su preferencia
+7. Seguir generando combates o salir de la página
 ---
 
 ## :white_check_mark: Avances Semanales
@@ -65,10 +66,13 @@ http://mytactics.x10.mx/Index.html
 |Semana 10|Término del Backend y testeo API|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-10)|
 |Semana 11|Optimización BD|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-11)|
 |Semana 12|Adición Duelo.php más mejoras QOL en todas las pantallas de selección de modo|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-12)|
-
+|Semana 13|Despliegue del proyecto en plataforma X10Hosting|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-13)|
+|Semana 14|Mejoras en archivos Duelo.php, funcionesduelo.js y duelo.css|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-14)|
+|Semana 15|Correcciones en archivos correspondientes a la semana 14|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-15)|
+|Semana 16|Archivos de página Duelo finalizados e implementados en producción|[Ver](https://github.com/Raynagah/Proyecto-Semestral/tree/main/Avances/Semana-16)|
 ---
 
 ## :bug: Estado Actual del Proyecto
-- Nos encontramos en la semana 12 del proyecto, actualmente estamos trabajando en la realización de mejoras QOL para cada modo de selección y animaciones simples para la página de duelo.
+- Nos encontramos en la semana 16 del proyecto, actualmente hemos finalizado con el desarrollo de este mini-proyecto académico, hemos concluido con el despliegue en un servicio de Hosting gratuito (x10Hosting).
 
 ---
