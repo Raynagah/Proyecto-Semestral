@@ -31,15 +31,22 @@ Sitio web desarrollado como parte del proyecto semestral que consiste en un simu
 - IA
 ---
 
-## :cd: Instalación
-1. Clonar el repositorio en la carpeta htdocs de Xampp:
+## :cd: Utilización del proyecto
+1. Ingresar al sitio web
 ```bash
-git clone https://github.com/Raynagah/Proyecto-Semestral 
+http://mytactics.x10.mx/Index.html
 ```
-2. Utilizar la ruta localhost/pokemon para acceder a la página de inicio
-```bash
-localhost/pokemon
+2. Utilizar el boton "Entrar" para seguir el flujo lógico de uso
+3. Elegir uno de los 3 modos disponibles
 ```
+- Aleatorio Vs Aleatorio
+- Aleatorio Vs Elección
+- Elección Vs Elección
+```
+4. Buscar o Seleccionar un pokemón según sus preferencias
+5. Proceder a la realización del duelo
+6. Elegir movivimientos durante el combate
+7. Elegir entre "Terminar batalla" o "Volver al menú principal" según su preferencia
 ---
 
 ## :white_check_mark: Avances Semanales
